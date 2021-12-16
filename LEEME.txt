@@ -1,0 +1,26 @@
+Esto es lo que hice:
+
+- registro.html
+- registro.jsp
+- listadoPedidoNuevo.jsp
+	Seguía apareciendo "null" en la columna ID al listarlo y como este número es asignado
+	automáticamente por la base de datos (por eso en el constructor le quitamos el idPedido)
+	lo resolví creando en esta página jsp una variable "j" que se incrementa en cada vuelta
+	del "for"
+- listadoLocalidades.jsp
+- LocalidadDAO.java
+- Localidad.java
+- En UsuarioDAO.java
+	* Agregué método "registrarNuevo()"
+- Agregué 2 pedidos
+- En index.html
+	Cambié el menú de este modo:
+		* "Ingreso" y "Registro" en INICIO
+		* en vez de "Pedidos" usé "Listados" en SERVICIO
+		* Agregué "Listado de Pedidos" y "Listado de Localidades" en submenú LISTADOS
+- en login.html
+	agregué en el formulario la línea: 
+	
+		<a href="registro.html">Para Registrarse click Aquí</a>
+
+	Para indicar que si no está registrado, lo haga y de ese modo lo redirige a la página Formulario Pedidos
